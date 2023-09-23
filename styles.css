@@ -1,0 +1,611 @@
+/*
+1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+box-sizing: border-box;
+}
+/*
+2. Remove default margin
+*/
+* {
+margin: 0;
+}
+/*
+Typographic tweaks!
+3. Add accessible line-height
+4. Improve text rendering
+*/
+body {
+line-height: 1.5;
+-webkit-font-smoothing: antialiased;
+}
+/*
+5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+display: block;
+max-width: 100%;
+}
+/*
+6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+font: inherit;
+}
+/*
+7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+overflow-wrap: break-word;
+}
+/*
+8. Create a root stacking context
+*/
+#root, #__next {
+isolation: isolate;
+}
+
+
+/***************My Styling****************/
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, li, input, button, a {
+    font-family: 'Raleway', sans-serif;
+}
+
+footer p, footer li {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+main {
+    background: url("images/bg-curve-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding: 50px 100px 0 100px;
+}
+
+#nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+
+#nav-links li {
+    color: hsl(238, 22%, 44%);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+#hero {
+    margin-bottom: 100px;
+}
+
+#hero > div {
+    width: 88%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+}
+
+#web-info {
+    margin-top: 100px;
+}
+
+#web-info h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    width: 80%;
+    color: hsl(243, 87%, 12%);
+}
+
+#web-info p {
+    font-size: 15px;
+    width: 75%;
+    margin-bottom: 20px;
+    color: hsl(243, 87%, 12%);
+}
+
+#web-info input {
+    width: 40%;
+    padding: 10px;
+    padding-left: 20px;
+    font-size: 13px;
+    border: 1.5px solid hsl(238, 22%, 44%);
+    color: hsl(238, 22%, 44%);
+    border-radius: 3px;
+    font-weight: 700;
+}
+
+#web-info button {
+    width: 25%;
+    padding: 10px;
+    font-size: 13px;
+    color:white;
+    background-color: hsl(224, 93%, 58%);
+    border-radius: 3px;
+    border: 0;
+    font-weight: 700;
+}
+
+main > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;padding: 100px;
+}
+
+#characteristics h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: hsl(243, 87%, 12%);
+}
+
+#characteristics p {
+    font-size: 14.5px;
+    color: hsl(243, 87%, 12%);
+    width: 73%;
+    margin-bottom: 20px;
+}
+
+#testimonial {
+    background-color: white;
+    box-shadow: 1px 1px 5px 5px hsl(238, 22%, 94%);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+}
+
+#characteristics > h5 > img {
+    display: inline;
+    height: 15px;
+    align-self: center;
+}
+
+#characteristics h5 {
+    font-size: 14px;
+    color: hsl(170, 45%, 43%);
+    display: flex;
+    gap: 5px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid hsl(170, 45%, 43%);
+    display: inline-block;
+}
+
+#testimonial > img {
+    align-self: start;
+}
+
+#testimonial > p {
+    font-size: 12px;
+    line-height: 25px;
+    word-spacing: 2px;
+}
+
+#user > img {
+    border-radius: 50%;
+    height: 30px;
+}
+
+#user {
+    display: flex;
+    gap: 10px;
+}
+
+#user-info h3 {
+    font-size: 10px;
+}
+
+#user-info p {
+    font-size: 8px;
+}
+
+#newsletter {
+    background-color: hsl(238, 22%, 44%);
+    padding: 100px;
+}
+
+#newsletter > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#info h2 {
+    color: white;
+    margin-bottom: 13px;
+}
+
+#info p {
+    font-size: 13px;
+    width: 70%;
+    color: white;
+}
+
+#sign-up input {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 12px;
+    padding: 12px;
+    width: 80%;
+}
+
+#sign-up button {
+    font-size: 12px;
+    padding: 10px 20px;
+    color: white;
+    background-color: hsl(224, 93%, 58%);
+    border: 0;
+    font-weight: 700;
+}
+
+footer {
+    background-color: hsl(243, 87%, 12%);
+    color: white;
+    padding: 70px;
+    font-size: 13.5px;
+}
+
+footer > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#media {
+    justify-self: center;
+    margin-top: 50px;
+    display: flex;
+    gap: 10px;
+}
+
+#media i { 
+    border: 1px solid white;
+    align-self: flex-start;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+#other-info {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-self: center;
+    column-gap: 100px;
+    margin-top: 50px;
+    row-gap: 20px;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact img {
+    align-self: flex-start;
+}
+
+#contact #phone {
+    display: flex;
+    gap: 20px;
+}
+
+#contact #mail {
+    display: flex;
+    gap: 20px;
+}
+
+@media screen and (max-width: 1344px) {
+    #characteristics > h2 {
+        font-size: 33px;
+    }
+}
+@media screen and (max-width:1335px) {
+    main > div img {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 1277px) {
+    #characteristics > h2 {
+        font-size: 30px;
+    }
+
+    #web-info h1 {
+        font-size: 34px;
+    }
+}
+@media screen and (max-width: 1211px) {
+    #characteristics > p {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #web-info {
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 1179px) {
+    #characteristics > h2 {
+        font-size: 28px;
+    }
+
+    #web-info h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1115px) {
+    #characteristics > h2 {
+        font-size: 26px;
+    }
+
+    #characteristics p {
+        width: 85%;
+    }
+
+    #web-info h1 {
+        font-size: 28px;
+    }
+
+    #testimonial {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #hero > div {
+        grid-template-columns: 1fr;
+    }
+
+    #hero > div > img {
+        order: 1;
+    }
+
+    #web-info {
+        order: 2;
+        text-align: center;
+    }
+
+    #web-info h1 {
+        font-size: 36px;
+        width: 80%;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    #web-info p {
+        width: 80%;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 30px;
+        font-size: 23px;
+    }
+
+    main {
+        background: url("images/bg-curve-mobile.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    main > div {
+        grid-template-columns: 1fr;
+    }
+
+    main > div > img {
+        order: 1;
+    }
+
+    #web-info > input {
+        display: block;
+        margin: auto;
+        margin-bottom: 30px;
+        padding: 17px;
+        width: 70%;
+    }
+
+    #web-info button {
+        padding: 17px;
+        width: 70%;
+        margin: auto;
+    }
+
+    #more-info {
+        order: 2;
+        text-align: center;
+    }
+
+    #characteristics h2 {
+        width: 80%;
+        text-align: center;
+        font-size: 34px;
+        margin: auto;
+        margin-bottom: 30px;
+        margin-top: 100px;
+    }
+
+    #characteristics p {
+        width: 75%;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 30px;
+        font-size: 22px;
+    }
+
+    #more-info h5 {
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 70px;
+    }
+
+    #testimonial {
+        margin: auto;
+        width: 70%;
+        gap: 30px;
+        padding: 50px;
+    }
+
+    #testimonial > p {
+        font-size: 16px;
+        text-align: left;
+        word-spacing: 5px;
+        line-height: 30px;
+    }
+
+    #user-info h3 {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    #user-info p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 951px) {
+    #nav-links {
+        width: 30%;
+    }
+}
+@media screen and (max-width: 900px) {
+    #characteristics > p {
+        width: 90%;
+    }
+
+    #newsletter {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    footer {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media screen and (max-width: 831px) {
+    #hero {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    #web-info h1 {
+        width: 95%;
+    }
+
+    #web-info p {
+        width: 95%;
+    }
+
+    #web-info input {
+        width: 85%;
+    }
+
+    #web-info button {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 899px) {
+    main {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    main > div {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 701px) {
+    #nav-links {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 851px) {
+    #newsletter > div {
+        grid-template-columns: 1fr;
+    }
+
+    #info > p {
+        margin-bottom: 30px;
+    }
+
+    footer > div {
+        grid-template-columns: 1fr;
+    }
+
+    #other-info {
+        justify-self: left;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width:601px) {
+    #info p {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 551px) {
+    #hero {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #web-info h1 {
+        font-size: 28px;
+    }
+
+    #web-info p {
+        font-size: 16px;
+    }
+
+    #characteristics h2 {
+        font-size: 26px;
+    }
+
+    #characteristics p {
+        font-size: 16px;
+    }
+
+    #characteristics h5 {
+        font-size: 15px;
+    }
+
+    #testimonial {
+        width: 90%;
+        padding: 20px;
+    }
+
+    header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    header img {
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 401px) {
+    #nav-links {
+        width: 50%;
+    }
+}
